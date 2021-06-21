@@ -1,4 +1,4 @@
-# quiz
+# Quiz Application Using Vue
 
 ## Project setup
 ```

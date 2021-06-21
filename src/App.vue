@@ -1,7 +1,7 @@
 <template>
   
     <div class="ctr">
-      <transition name="fade" mode="out-in">
+      <transition name="fade" mode="out-in"> <!-- Transition component between result & reset-->
         <questions 
         v-if="questionsAnswered < questions.length" 
         :questions="questions"
@@ -112,10 +112,10 @@ export default {
   methods: {
     questionAnswered(is_correct) {
       if(is_correct) {
-        this.totalCorrect++
+        this.totalCorrect++ // incremnet totalCorrect for every is_correct = true 
       }
 
-      this.questionsAnswered++
+      this.questionsAnswered++ // incremnet questionsAnswered for every question answered 
     },
     reset() {
       this.questionsAnswered = 0;
